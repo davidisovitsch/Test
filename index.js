@@ -1,14 +1,14 @@
-/*
+
 const express = require('express')
 const app = express()
 
 app.use(express.static('app'))
 
-app.listen(3000, function () {
+app.listen(process.env.PORT || 3000, function () {
   console.log('Example app listening on port 3000!')
 })
-*/
 
+/*
 const http = require('http');
 
 const hostname = '127.0.0.1';
@@ -23,3 +23,4 @@ const server = http.createServer((req, res) => {
 server.listen(port, hostname, () => {
   console.log(`Server running at http://${hostname}:${port}/`);
 });
+*/
